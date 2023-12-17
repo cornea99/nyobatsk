@@ -1,4 +1,5 @@
 FROM python:3.9
+USER root
 WORKDIR /
 RUN apt update && apt -y install wget curl
 # Copies the trainer code to the docker image.
