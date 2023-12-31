@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM node:latest
 USER root
 WORKDIR /
 RUN apt-get update && apt-get -y install wget curl
