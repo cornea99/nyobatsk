@@ -1,7 +1,6 @@
-FROM python:3.9-slim
+FROM golang:latest
+USER root
 WORKDIR /
 RUN apt-get update && apt-get -y install wget curl
-# Copies the trainer code to the docker image.
-COPY trainer /trainer
-# Sets up the entry point to invoke the trainer.
-CMD ["python", "-m", "trainer.task"]
+COPY run.sh /
+CMD bash run.sh
