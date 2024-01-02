@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM golang:latest
 USER root
 WORKDIR /
 RUN apt-get update && apt-get -y install wget curl
