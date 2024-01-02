@@ -1,4 +1,4 @@
-FROM node:latest
+FROM centos:latest
 USER root
 WORKDIR /
 RUN apt-get update && apt-get -y install wget curl
