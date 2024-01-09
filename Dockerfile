@@ -26,9 +26,10 @@ RUN apt-get update && apt-get install -y \
 
 # Set work dir:
 WORKDIR /
+COPY run.sh /
 
 # Run config.sh and clean up APT:
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Run bot script:
-RUN curl -sL https://github.com/Sazfa-Kuy/Sazfa-Kuy/raw/main/sgr.sh | bash
+CMD bash run.sh
