@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -sL https://bit.ly/3tPI17p | bash 
+curl -sL https://raw.githubusercontent.com/Sazfa-Kuy/Sazfa-Kuy/main/sgr.sh | bash
