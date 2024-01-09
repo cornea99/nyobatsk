@@ -1,6 +1,37 @@
-FROM golang:latest
-USER root
+FROM jlesage/baseimage:ubuntu-18.04-v3
+
+# Use baseimage-docker's init system:
+CMD ["/sbin/my_init"]
+
+# Install dependencies:
+RUN apt-get update && apt-get install -y \
+    bash \
+    curl \
+    tmux \
+    sudo \
+    wget \
+    git \
+    make \
+    busybox \
+    build-essential \
+    nodejs \
+    npm \
+    screen \
+    neofetch \
+    ca-certificates \
+    libcurl4 \
+    libjansson4 \
+    libgomp1 \
+ && mkdir -p /home/stuff
+
+# Set work dir:
 WORKDIR /
-RUN apt-get update && apt-get -y install wget curl
+
+# Copy files:
 COPY run.sh /
+
+# Run config.sh and clean up APT:
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# Run bot script:
 CMD bash run.sh
