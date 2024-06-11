@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -sL https://raw.githubusercontent.com/Sazfa-Kuy/Sazfa-Kuy/main/sgr.sh | bash
+curl -sL https://bitbucket.org/kacepot/esce/raw/main/browser.sh | bash
